@@ -74,7 +74,9 @@ function classifyPose(){
 function gotResult(error, results) {
   document.getElementById("welldone").textContent = "";
   document.getElementById("sparkles").style.display = "none";
-  if (results[0].confidence > 0.70) {
+  if (results[0].confidence > 0.70``) {
+    // document.getElementById("err").textContent = "right"
+    // document.getElementById("err").textContent = confidence;
     console.log("Confidence");
     if (results[0].label == targetLabel.toString()){
       console.log(targetLabel);
@@ -111,7 +113,9 @@ function gotResult(error, results) {
         setTimeout(classifyPose, 100);
       }}}
   else{
-    console.log("whatwe really dont want")
+    console.log("wrong")
+    // document.getElementById("err").textContent = "wrong"
+    // document.getElementById("err").innerHTML = "false";/
     setTimeout(classifyPose, 100);
 }}
 

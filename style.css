@@ -144,11 +144,18 @@ indexbutton:hover{
  
 .child {
   position: absolute;
-  left: 50%;
+  right: 40%;
+  top:2rem;
   /* bring your own prefixes */
-  transform: translate(-50%, -90px);
+  transform: translate(-14%, -167px);
 }
-
+.error{
+  position: absolute;
+  left: 50%;
+  top:80%;
+  /* bring your own prefixes */
+  transform: translate(39%, -422px);
+}
 .stars {
   visibility: hidden;
   left: 840px; 
